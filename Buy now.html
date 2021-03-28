@@ -1,0 +1,285 @@
+<!DOCTYPE html> 
+<html lang="english">
+    <head>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="This is the home page of the assignment">
+        <link rel="apple-touch-icon" sizes="180x180" href="/Images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/Images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/Images/favicon-16x16.png">
+        <link rel="manifest" href="manifest.json">
+        <link rel="mask-icon" href="/Images/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="/Images/favicon.ico">
+        <meta name="msapplication-TileColor" content="#00aba9">
+        <meta name="msapplication-config" content="/Images/browserconfig.xml">
+        <meta name="theme-color" content="#006a70">
+        <link rel="stylesheet" href="Style/normalize.css">
+        <link rel="stylesheet" href="Style/Buy now.css">
+        
+        <title>Store</title>
+    </head>
+
+    <body>
+                <div>
+            <header><a href="index.html"><img src="Images/cover.png" id="flora" height="360"></a></header>
+            <nav id="Mainnav">
+                <ul>
+                    <li><a href="index.html"><span class="navText">Home</span></a></li>
+                    <li><a href="Products.html"><span class="navText">Products</span></a></li>  
+                    <li><a href="Manufacturers_1 .html"><span class="navText">Manufacturers</span></a></li>
+                    <li><a href="Buy now.html"><span class="navText">Store</span></a></li>
+                    <li><a href="Contact.html"><span class="navText">Contact </span></a></li>
+                </ul>
+            </nav>
+            <main>
+                <!--Desing loyalty points-->
+                <div id="loyaltymenue">
+                    <p id="close" onclick="closeloyaltymenue()">X</p>
+                    <p id="ldes">Loyalty points</p>
+                    <hr size="8" width="80%" color="white"> 
+                    <br>
+                    <br>
+                    <p id="lnumber"></p>
+                    <br>
+                    <br>
+                    <hr size="8" width="80%" color="white"> 
+                    <center><p id="loyatyh4">Buy 3 or more products 
+                        <br>
+                        in the same order to recive 
+                        <br>
+                        20 loyalty points per product!!!!</p></center>
+                </div>
+                <p id="SCart" onclick="loyaltyPoint()">&#9776;</p>
+
+                 <h1 id="hh1">Buy Eco-Friendly products</h1>
+                <!--Select manufacture-->
+                <div id="mselect">
+                   
+                    <h1>Choose Manufacturer</h1>
+                    <br>
+                    <br>
+                    <div id="storemanufacture">
+                        
+                        <section class="SMsection" id="SMsection1">
+                            <h2>Eco Films</h2>
+                            <input type="radio" id="rm" class="rrm" name="manufacture" value="Eco-Films" onclick="changemanu1()">
+                            <label for="Eco-Films"></label>
+                            <br>
+                            <br>
+                        </section>
+
+                        <section class="SMsection" id="SMsection2">
+                            <h2>Trickledown</h2>
+                            <input type="radio" id="rm" class="rrm" name="manufacture" value="Trickledown" onclick="changemanu2()">
+                            <label for="Trickledown"></label>
+                        </section>
+
+                        <section class="SMsection" id="SMsection3">
+                            <h2>GreenBag</h2>
+                            <input type="radio" id="rm" class="rrm" name="manufacture" value="GreenBag" onclick="changemanu3()">
+                            <label for="GreenBag"></label>
+                        </section>
+                    </div>
+                    <br>
+                </div>
+                
+                <br>
+                <br>
+                <!---Select products--->
+                <div id="pselect">
+                    <h1>Select products</h1>
+                    <br>
+                    <br>
+                    <div id="storeproduct">
+                        <section class="SPsection">
+                            <h2>Bags</h2>
+                            <h3>1000LKR</h3>
+                            <input type="radio" id="rp" class="rrp" name="products" value="Bags" onclick="changeproduct1()">
+                            <br>
+                            <br>
+                        </section>
+
+                        <section class="SPsection">
+                            <h2>Plates</h2>
+                            <h3>2000LKR</h3>
+                            <input type="radio" id="rp" class="rrp" name="products" value="Plates" onclick="changeproduct2()">
+                            <br>
+                            <br>
+                        </section>
+
+                        <section class="SPsection">
+                            <h2>Mugs</h2>
+                            <h3>2500 LKR</h3>
+                            <input type="radio" id="rp" class="rrp" name="products" value="Mugs" onclick="changeproduct3()">
+                            <br>
+                            <br>
+                        </section>
+
+                        <section class="SPsection">
+                            <h2>Soap</h2>
+                            <h3>800LKR (each)</h3>
+                            <input type="radio" id="rp" class="rrp" name="products" value="Soap" onclick="changeproduct4()">                            
+                            <br>
+                            <br>
+                        </section>
+
+                    </div>
+                </div>
+                
+                <br>
+                <br>
+                <!--Select size-->
+                <div id="sselect">
+                    <h1>Select size</h1>
+                    <div id="storesize">
+                        <section class="SSsection">
+                            <h2>Small</h2>
+                            <h3>No additional charges</h3>
+                            <input type="radio" id="rs" class="rrs" name="size" value="Small" onclick="changesize1()">
+                            <br>
+                            <br>
+                            <br>
+                        </section>
+
+                        <section class="SSsection">
+                            <h2>Medium</h2>
+                            <h3>+2500LKR</h3>
+                            <input type="radio" id="rs" class="rrs" name="size" value="Medium" checked onclick="changesize2()">
+                            <br>
+                            <br>
+                            <br>
+                        </section>
+
+                        <section class="SSsection">
+                            <h2>Large</h2>
+                            <h3>+5000LKR</h3>
+                            <input type="radio" id="rs" class="rrs" name="size" value="Large" onclick="changesize3()">
+                            <br>
+                            <br>
+                            <br>
+                        </section>
+
+                        
+                    </div>
+                </div>
+                <br>
+                <br>
+                
+                <!--Select extra-->
+                <div id="aextra">
+                    <h1>Extras</h1>
+                    <div id="storeeextra">
+                        <Section class="AAextra">
+                            <h2>Eco-Friendly packaging </h2>
+                            <h3>+500LKR</h3>
+                            <input type="radio" id="ce" class="cce" name="Extras" value="Eco-Friendly packaging " onclick="changeextra1()">
+                            <br>
+                            <br>
+                            <br>
+                        </Section>
+
+                        <Section class="AAextra">
+                            <h2>Eco-friendly greeting cards  </h2>
+                            <h3>+1000LKR</h3>
+                            <input type="radio" id="ce" class="cce" name="Extras" value="Eco-friendly greeting cards" onclick="changeextra2()">
+                            <br>
+                            <br>
+                            <br>
+                        </Section>
+
+                        <Section class="AAextra">
+                            <h2>Eco-friendly decorations  </h2>
+                            <h3>+1500LKR</h3>
+                            <input type="radio" id="ce" class="cce" name="Extras" value="Eco-friendly decorations" onclick="changeextra3()">
+                            <br>
+                            <br>
+                            <br>
+                        </Section>
+                        
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <center><i>Please select one item from each  of the four categories</i></center>
+                <br>
+                <br>
+                <br>
+                <div id="AOT">
+                <center><button type="button" class="ATObtn" id="aotid" onclick="atobtn()">Add to order<img src="Images/Truck.png" id="truck"></button></center>
+                </div>
+                <center>
+                    <button type="button" id="addtomyfav" class="addtomyfav" onclick="Addtofav()">Add to favourites</button>
+                    <button type="button" id="displaymyfav" class="displaymyfav" onclick="displaymyfav()">Order favourites</button>
+                </center>
+                <div id="myorders">
+                    <h1><center>My orders</center></h1>
+                    <center>
+                        <p id="showorders">     </p>
+                        <p id="showorders2">     </p>
+                        <p id="showorders3">     </p>
+                        <p id="showorders4">     </p>
+                        <p id="favshow1">     </p>
+                        <p id="favshow2">     </p>
+                        <p id="favshow3">     </p>
+                        <p id="favshow4">     </p>
+                        </center>
+                    <hr size="8" width="30%" color="black"> 
+                    <center>
+                        <p id="Totalprice">     </p>
+                        <p id="Favorder">       </p>
+                        <p id="LFavorder">       </p>
+                    </center>
+                    <hr size="8" width="30%" color="white"> 
+                    <Center>
+                        <!--
+                            //This part is to test some of the javascript code//
+                            <button type="button" onclick="testeverything()" id="ubertest">Test</button>
+                            <p id="Totalprice">
+                            </p>
+                        -->    
+                            <p id="uberpick"></p>
+                        
+
+                        </p>
+                    </Center>
+                </div>
+                <br>
+                <br>
+                
+                <div id="po">
+                    <center>
+                        <input type="checkbox" id="checkop" name="check" value="opcheck">
+                        <label for="check">Confirm</label>
+                    </center>
+                    <center><button type="button" class="pobtn" id="placeorder">Place order</button></center>
+                </div>
+                <br>
+                <br>
+                <button type="button" class="top" id="top">Go to the top</button>
+                <br>
+                <br>
+                <br>
+                
+            </main>
+        </div>
+        <script src="Script/Script.js"></script>
+    </body>
+    <Footer id="ft">
+        <br>
+        <hr size="8" width="3%" color="white">  
+
+        <h6><b><i><center>Akindu Dissanayake</center></i></b></h6>
+        
+        <h6><b><i><center>Email-cb008577@students.apiit.lk</center></i></b></h6>
+        
+        <h6><b><i><center>Phone-070-432-8651</center></i></b></h6>
+
+        <hr size="8" width="3%" color="white">  
+    </Footer>
+
+</html>
+
+
+
+

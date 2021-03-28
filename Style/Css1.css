@@ -1,0 +1,329 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #41B3A3;
+}
+
+h1,h2,h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 1em 0;
+    text-align: center;
+}
+
+h1{
+    font-size: 1.8em;
+    text-align: center;
+}
+
+h3{
+    margin: 1em 0;
+    font: bold;
+}
+
+header,footer{
+    background: #164A41;
+}
+
+footer{
+    padding: 0.1em;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+    line-height: 40px;
+}
+
+#Css1 {
+    min-width: 250px;
+    max-width: 2400px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+/*Header*/
+#flora{
+    width: 30%;
+    height: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*Main nav*/
+
+#Mainnav{
+    position: sticky;
+    top: 0;
+}
+
+#Mainnav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: #41ebc6;
+}
+
+#Mainnav li{
+    flex-grow: 1;
+    width: calc(25% - .2em);
+}
+
+.navText{
+    padding-left: 60px;
+}
+
+#Mainnav a{
+    background-repeat: no-repeat;
+    background-size: 40px auto;
+    background-position: .5em center;
+    min-height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    display: block;
+    color: rgb(17, 17, 17);  
+}
+
+#Mainnav a:hover{
+    transform: scale(1.1);
+    background-color: #3ed6b5;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    border-radius: 100px;
+}
+
+
+/*End of the desinging of the navigation bar*/
+
+
+main{
+    padding: 2em;
+    margin: 1em;
+    background-color: #50e4d071;
+    border: black;
+    border-style: solid;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+#CSS1-container2{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+#CSS1-container2 .Css-s{
+    margin: .8em .2em;
+    width: calc(33% - .4em);
+    box-sizing: border-box;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    background-color: rgba(255, 224, 179, 0.2);
+}
+
+#CSS1-container2 h2, #CSS1-container2 p{
+    width: 90%;
+    padding: 0;
+    margin: 1em auto;
+}
+
+#CSSIMG{
+    width: 100%;
+    height: auto;
+}
+
+#Css1{
+    background-color: #41B3A3;
+    animation-name: CC;
+    animation-duration: 6s;
+}
+
+@keyframes CC  {
+    0%   {background-color: #41b383;}
+    25%  {background-color: #41b38d;}
+    50%  {background-color:#41a2b3;}
+    100% {background-color: #41b391;}
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 900px){
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #41B3A3;
+    }
+    
+    h1,h2,h3{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 1em 0;
+        text-align: center;
+    }
+    
+    h1{
+        font-size: 1.8em;
+        text-align: center;
+    }
+    
+    h3{
+        margin: 1em 0;
+        font: bold;
+    }
+    
+    header,footer{
+        background: #164A41;
+    }
+    
+    footer{
+        padding: 0.1em;
+    }
+    
+    footer a{
+        text-decoration: none;
+        color: black;
+        line-height: 40px;
+    }
+    
+    #Css1 {
+        min-width: 250px;
+        max-width: 2400px;
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    /*Header*/
+    #flora{
+        width: 30%;
+        height: 25%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    /*Main nav*/
+    
+    #Mainnav{
+        position: static;
+        top: 0;
+    }
+    
+    #Mainnav ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        background-color: #41ebc6;
+        flex-flow: column;
+    }
+    
+    #Mainnav li{
+        flex-grow: 1;
+        width: calc(25% - .2em);
+    }
+    
+    .navText{
+        padding-left: 60px;
+    }
+    
+    #Mainnav a{
+        background-repeat: no-repeat;
+        background-size: 40px auto;
+        background-position: .5em center;
+        min-height: 50px;
+        line-height: 50px;
+        text-decoration: none;
+        display: block;
+        color: rgb(17, 17, 17);  
+    }
+    
+    #Mainnav a:hover{
+        background-color: #3ed6b5;
+    }
+    
+    
+    /*End of the desinging of the navigation bar*/
+    
+    
+    main{
+        padding: 2em;
+        margin: 1em;
+        background-color: #50e4d071;
+        border: black;
+        border-style: solid;
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    }
+    
+    #CSS1-container2{
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+    }
+    
+    #CSS1-container2 .Css-s{
+        margin: .8em .2em;
+        width: 100%;
+        box-sizing: border-box;
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+        background-color: rgba(255, 224, 179, 0.2);
+    }
+    
+    #CSS1-container2 h2, #CSS1-container2 p{
+        width: 90%;
+        padding: 0;
+        margin: 1em auto;
+    }
+    
+    #CSSIMG{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

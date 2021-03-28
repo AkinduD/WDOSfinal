@@ -1,0 +1,748 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+h1,h2,h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 1em 0;
+    text-align: center;
+}
+
+h1{
+    font-size: 1.8em;
+    text-align: center;
+}
+
+h3{
+    margin: 1em 0;
+    font: bold;
+}
+
+header,footer{
+    background: #0059ac;
+    
+}
+
+header{
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+footer{
+    padding: 0.1em;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+    line-height: 40px;
+}
+
+main{
+    padding: 1em;
+    margin: 0;
+    background-color: #ffff;
+}
+
+
+/*Header*/
+#flora{
+    width: 30%;
+    height: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*--------------------------------------------------------------*/
+/*Main nav*/
+
+#Mainnav{
+    position: sticky;
+    top: 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 12px;
+    border-radius: 100px;
+}
+
+#Mainnav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: #6cb8ff;
+    border-radius: 100px;
+}
+
+#Mainnav li{
+    flex-grow: 1;
+    width: calc(25% - .2em);
+}
+
+.navText{
+    padding-left: 60px;
+}
+
+#Mainnav a{
+    background-repeat: no-repeat;
+    background-size: 40px auto;
+    background-position: .5em center;
+    min-height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    display: block;
+    color: rgb(17, 17, 17);  
+}
+
+#Mainnav a:hover{
+    transform: scale(1.1);
+    background-color: #0184ff;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);;
+    border-radius: 100px;
+}
+
+
+/*End of the desinging of the navigation bar*/
+
+@media (min-width: 320px) and (max-width: 900px){  /*Navigation*/
+    
+    
+    
+    #flora{
+        width: 30%;
+        height: 25%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /*--------------------------------------------------------------*/
+    /*Main nav*/
+    
+    #Mainnav{
+        position: static;
+        top: 0;
+    }
+    
+    #Mainnav ul{
+
+        display: flex;
+        background-color: #41ebc6;
+        flex-flow: column;
+        justify-content: center;
+    }
+    
+    #Mainnav li{
+        width: calc(20% - .2em);
+        justify-content: center;
+    }
+    
+    #Mainnav a{
+        background-repeat: no-repeat;
+        background-size: 40px auto;
+        background-position: .5em center;
+        min-height: 50px;
+        line-height: 50px;
+        text-decoration: none;
+        display: block;
+        color: rgb(17, 17, 17);  
+    }
+}
+/*-------------------------Home--------------------------*/
+#MainImage{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow:  0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);;
+}
+
+#Home_page {
+    min-width: 250px;
+    max-width: 2400px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+/*Design of the flexbox*/
+
+#MPflex{
+display: flex;
+flex-flow: row wrap;
+justify-content: space-between;
+border-radius: 20px;
+background-color: white;
+}
+/*MPflex=divtag
+container=section
+*/
+#MPflex .container{
+margin: .8em .2em;
+width: calc(33% - .4em);
+box-sizing: border-box;
+box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+background-color: white;
+border-radius: 20px;
+}
+
+#MPflex h3, #MPflex p{
+width: 90%;
+padding: 0;
+margin: 1em auto;
+}
+
+
+/*Design for the 3 images inside the flexbox*/
+
+#HPI1{
+    height: 50%;
+    width: 100%;
+}
+
+#HPI2{
+    height: 50%;
+    width: 100%;
+}
+
+#HPI3{
+    height: 50%;
+    width: 100%;
+}
+
+@media (min-width: 320px) and (max-width: 900px){
+    #MainImage{
+        width: 100%;
+        height: auto;
+    }
+    
+    #Home_page {
+        min-width: 250px;
+        max-width: 2400px;
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    /*Design of the flexbox*/
+    
+    #MPflex{
+    display: flex;
+    flex-flow: column;
+    }
+    
+    #MPflex .container{
+        margin: .8em .2em;
+        width: 100%;
+        box-sizing: border-box;
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+        background-color: rgba(255, 224, 179, 0.2);
+    }
+    
+    #MPflex h3, #MPflex p{
+        width: 90%;
+        padding: 0;
+        margin: 1em auto;
+    }
+    
+    /*Design for the 3 images inside the flexbox*/
+    
+    #HPI1{
+        height: 50%;
+        width: 100%;
+    }
+    
+    #HPI2{
+        height: 50%;
+        width: 100%;
+    }
+    
+    #HPI3{
+        height: 50%;
+        width: 100%;
+    }
+}
+
+
+/*-------------------------Products--------------------------*/
+
+#Products {
+    min-width: 250px;
+    max-width: 2400px;
+    width: 95%;
+    margin: auto;
+    background-color: white;
+}
+
+#Pleaf{
+    width: 100%;
+    height: auto;
+}
+
+#Prp{
+    padding: 1em;
+    margin: 0em;
+    background-color: #73a8da;
+    border: black;
+    border-style: solid;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+#table{
+    text-align: center;
+    border: black;
+    border-collapse: collapse;
+    border-style: solid;
+    margin: 20px;
+    font-size: 0.9em;
+    min-width: 400px;
+    background-color: #6cb8ff;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+#table thead{
+    background-color:#0184ff;
+    color: black;
+    text-align: center;
+}
+
+#table td {
+    padding: 8px;
+}
+
+tr:nth-child(even){
+    background-color: #4398e7;
+}
+
+@media (min-width: 320px) and (max-width: 900px){
+    #Products {
+        min-width: 250px;
+        max-width: 2400px;
+        width: 95%;
+        margin: auto;
+        background-color: #41B3A3;
+    }
+    
+    #Pleaf{
+        width: 100%;
+        height: auto;
+    }
+    
+    #Prp{
+        padding: 1em;
+        margin: 0em;
+        background-color: #4bd4c271;
+        border: black;
+        border-style: solid;
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    }
+    #table{
+        text-align: center;
+        border: black;
+        border-collapse: collapse;
+        border-style: solid;
+        margin: 10px 0;
+        font-size: 0.5em;
+        min-width: 40px;
+        background-color: #64d6cd;
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    }
+    
+    #table thead{
+        background-color:#59c4cc;
+        color: black;
+        text-align: center;
+    }
+    
+    #table td {
+        padding: 4px;
+    }
+    
+
+}
+
+/*-------------------------Manufactures--------------------------*/
+
+#Manufactures{
+    min-width: 250px;
+    max-width: 2400px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+/*First company*/
+
+#Eco-films-img{
+    width: 100%;
+    height: auto;
+    
+}
+
+#Eco-films{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+#Eco-films .container-1{
+    margin: .8em .2em;
+    width: calc(33% - .4em);
+    box-sizing: border-box;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    background-color: rgb(255, 255, 255);
+    border: black;
+    border-style: solid;
+}
+
+#Eco-films p{
+    width: 90%;
+    padding: 0;
+    margin: 1em auto;
+}
+
+#link1 {
+    font-family: monospace;
+    text-decoration: none;
+    border: black;
+    border-style:solid;
+    padding: 15px 32px;
+    text-align: center;
+    margin: 4px 2px;
+    cursor: pointer;
+    float: right;
+    transition-duration: 0.5s;
+}
+
+#link1:hover{
+    background-color: #0184ff;
+    color: black;
+}
+
+/*Second compnay*/
+
+#TrickleD{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+#TrickleD .container-2{
+    margin: .8em .2em;
+    width: calc(33% - .4em);
+    box-sizing: border-box;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    background-color: white;
+    border: black;
+    border-style: solid;
+}
+
+#TrickleD p{
+    width: 90%;
+    padding: 0;
+    margin: 1em auto;
+}
+
+#TrickleD-img{
+    width: 100%;
+    height: auto;
+}
+
+#link2 {
+    font-family: monospace;
+    text-decoration: none;
+    background-color: white;
+    border: black;
+    border-style:solid;
+    padding: 15px 32px;
+    text-align: center;
+    margin: 4px 2px;
+    cursor: pointer;
+    float: right;
+    transition-duration: 0.5s;
+}
+
+#link2:hover{
+    background-color: #0184ff;
+    color: black;
+}
+
+/*Third conpany*/
+
+#Greenbag{
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content: space-evenly;
+
+}
+
+#Greenbag .container-3{
+    margin: .8em .2em;
+    width: calc(33% - .4em);
+    box-sizing: border-box;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    background-color: white;
+    border: black;
+    border-style: solid;
+}
+
+#Greenbag p{
+    width: 90%;
+    padding: 0;
+    margin: 1em auto;
+}
+
+#GreenBag-img{
+    width: 100%;
+    height: 50%;
+    vertical-align:middle;
+}
+
+#link3 {
+    font-family: monospace;
+    text-decoration: none;
+    background-color: white;
+    border: black;
+    border-style:solid;
+    padding: 15px 32px;
+    text-align: center;
+    margin: 4px 2px;
+    cursor: pointer;
+    float: right;
+    transition-duration: 0.5s;
+}
+
+#link3:hover{
+    background-color: #0184ff;
+    color: black;
+}
+
+#BTN{
+    border: black;
+    border-style: solid;
+    text-align: center;
+}
+
+#Mbtn{
+    border-radius: 20px;
+    background-color:white;
+    color: black;
+    padding: 16px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: black;
+    border-style: solid;
+    text-decoration: none;
+    outline: none;
+}
+
+#Mbtn:hover{
+    background-color: #0184ff;
+}
+
+
+@media (min-width: 320px) and (max-width: 900px){
+    #Manufactures{
+        min-width: 250px;
+        max-width: 2400px;
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    /*First company*/
+    
+    #Eco-films-img{
+        width: 100%;
+        height: auto;
+        
+    }
+    
+    #Eco-films{
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+    }
+    
+    #Eco-films .container-1{
+        margin: .8em .2em;
+        width: 100%;
+        box-sizing: border-box;
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+        background-color: rgba(255, 224, 179, 0.2);
+    }
+    
+    #Eco-films p{
+        width: 90%;
+        padding: 0;
+        margin: 1em auto;
+    }
+    
+    #link1 {
+        font-family: monospace;
+        text-decoration: none;
+        border: black;
+        border-style:solid;
+        padding: 15px 32px;
+        text-align: center;
+        margin: 4px 2px;
+        cursor: pointer;
+        float: right;
+        transition-duration: 0.5s;
+    }
+    
+    #link1:hover{
+        background-color: #4CAF50;
+        color: black;
+    }
+    
+    /*Second compnay*/
+    
+    #TrickleD{
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+    }
+    
+    #TrickleD .container-2{
+        margin: .8em .2em;
+        width: 100%;
+        box-sizing: border-box;
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+        background-color: rgba(255, 224, 179, 0.2);
+    }
+    
+    #TrickleD p{
+        width: 90%;
+        padding: 0;
+        margin: 1em auto;
+    }
+    
+    #TrickleD-img{
+        width: 100%;
+        height: auto;
+    }
+    
+    #link2 {
+        font-family: monospace;
+        text-decoration: none;
+        background-color: #4CAF50;
+        border: black;
+        border-style:solid;
+        padding: 15px 32px;
+        text-align: center;
+        margin: 4px 2px;
+        cursor: pointer;
+        float: right;
+        transition-duration: 0.5s;
+    }
+    /*Third conpany*/
+    
+    #Greenbag{
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+    
+    }
+    
+    #Greenbag .container-3{
+        margin: .8em .2em;
+        width: 100%;
+        box-sizing: border-box;
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+        background-color: rgba(255, 224, 179, 0.2);
+    }
+    
+    #Greenbag p{
+        width: 90%;
+        padding: 0;
+        margin: 1em auto;
+    }
+    
+    #GreenBag-img{
+        width: 100%;
+        height: 50%;
+        vertical-align:top;
+    }
+    
+    #link3 {
+        font-family: monospace;
+        text-decoration: none;
+        background-color: #4CAF50;
+        border: black;
+        border-style:solid;
+        padding: 15px 32px;
+        text-align: center;
+        margin: 4px 2px;
+        cursor: pointer;
+        float: right;
+        transition-duration: 0.5s;
+    }
+    
+    
+    #BTN{
+        border: black;
+        border-style: solid;
+        text-align: center;
+    }
+    
+    #Mbtn{
+        border-radius: 20px;
+        background-color:#38a193;
+        color: black;
+        padding: 16px;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border: black;
+        border-style: solid;
+        text-decoration: none;
+    }
+}
+
+
+/*Contact us*/
+#Contact-us{
+        min-width: 250px;
+        max-width: 2400px;
+        width: 95%;
+        margin: 0 auto;
+}
+
+fieldset{
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: black   solid;
+    background-color: #3893e9;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+#CUB{
+    background-color: #0184ff;
+    color:black;
+    border: solid;
+}
+
+#CUB:hover{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+

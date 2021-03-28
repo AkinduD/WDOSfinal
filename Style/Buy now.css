@@ -1,0 +1,562 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+h1,h2,h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 1em 0;
+    text-align: center;
+}
+
+h1{
+    font-size: 1.8em;
+    text-align: center;
+}
+
+h3{
+    margin: 1em 0;
+    font: bold;
+}
+
+header,footer{
+    background: #0059ac;
+}
+header{
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+footer{
+    padding: 0.1em;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+    line-height: 40px;
+}
+
+main{
+    padding: 1em;
+    margin: 0;
+    background-color: white;
+}
+body{
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+
+/*Header*/
+#flora{
+    width: 30%;
+    height: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*---------------Main nav--------------------------*/
+
+#Mainnav{
+    position: sticky;
+    top: 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 12px;
+    border-radius: 100px;
+}
+
+#Mainnav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: #6cb8ff;
+    border-radius: 100px;
+}
+
+#Mainnav li{
+    flex-grow: 1;
+    width: calc(25% - .2em);
+}
+
+.navText{
+    padding-left: 60px;
+}
+
+#Mainnav a{
+    background-repeat: no-repeat;
+    background-size: 40px auto;
+    background-position: .5em center;
+    min-height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    display: block;
+    color: rgb(17, 17, 17);  
+}
+
+#Mainnav a:hover{
+    transform: scale(1.1);
+    background-color: #0184ff;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    border-radius: 100px;
+}
+
+#hh1{
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font: bold;
+}
+
+/*-----------------------------------------------------------------*/
+/*Desing loyalty menue*/
+#SCart{
+    height: 1%;
+    width: 2%;
+    padding: .5em;
+    border-radius: 10px;
+    float: left;
+    top: 60px;
+    bottom: 0;
+    position: sticky;
+    cursor: pointer;
+    font-size: 33px;
+    color: black;
+    
+}
+
+#SCart:hover{
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    background-color: white;
+    color: #3074b4;
+    transform: scale(1.1);      
+    transition-duration: 0.1s; 
+}
+
+#SCart:active{
+    background-color: #4d9eeb;
+}
+
+#loyaltymenue{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    background-color: #4d9eeb;
+}
+
+#loyaltymenue P{
+    text-decoration: none;
+    color: rgb(118, 154, 187);
+    display: block;
+    transition: 0.3s;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#loyaltymenue p:hover{
+    transform: scale(1.1);
+}
+
+#close{
+    cursor: pointer;
+    font-size: 30px;
+    text-align: right;
+    margin-right: 1em;
+    transform: scale(1.1);
+}
+
+#lnumber{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+
+#ldes{
+    text-align: center;
+    font-size: 20px;
+}
+
+#loyatyh4{
+    font: bold;
+    margin: 1em;
+    font-size:12px;
+    font-style: italic;
+    width: 100%;
+    
+}
+
+
+/*----------------------------------------------------------------*/
+
+/*First section*/
+#storemanufacture{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    border-radius: 20px;
+    background-color: white;
+    
+}
+
+#storemanufacture .SMsection{
+    margin: .8em .2em;
+    width: calc(33% - .4em);
+    box-sizing: border-box;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    background-color: rgba(255, 224, 179, 0.2);
+    border-radius: 20px;
+    border: black solid 1px;
+}
+
+#storemanufacture{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+#mselect{
+    border: rgb(0, 0, 0) solid;
+    padding: 1em;
+}
+
+/*Button style*/
+
+.rrm{
+   width: 100%;
+   height: 20%;
+   cursor: pointer;
+}
+
+.rrm:hover{
+    background-color: #63daca;
+     transition-duration: .1s;
+     transform:scale(0.8);
+     background-color: #0184ff;
+}
+
+.rrm:active{
+    height: 30%;
+}
+
+/*second sectoin*/
+#storeproduct{
+    display: flex;
+    flex-flow:nowrap ;
+    justify-content:space-between
+}
+
+#storeproduct .SPsection{
+    margin: .8em .2em;
+    width: calc(33% - .4em);
+    box-sizing: border-box;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    background-color: rgba(255, 224, 179, 0.2);
+    border-radius: 20px;
+    border: black solid 1px;
+}
+
+
+#pselect{
+    border: black solid;
+    padding: 1em;
+    padding-bottom: 2em;
+}
+
+.rrp{
+    width: 100%;
+    height: 15%;
+    cursor: pointer;
+ }
+ 
+ .rrp:hover{
+    background-color: #63daca;
+     transition-duration: .1s;
+     transform:scale(0.8);
+     background-color: #0184ff;
+ }
+ 
+ .rrp:active{
+    height: 20%;
+ }
+
+
+
+ /*third sectoin*/
+#storesize{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+#storesize .SSsection{
+    margin: .8em .2em;
+    width: calc(33% - .4em);
+    box-sizing: border-box;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    background-color: rgba(255, 224, 179, 0.2);
+    margin-bottom: 2em;
+    border-radius: 20px;
+    border: black solid 1px;
+}
+
+#storesize{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+#sselect{
+    border: black solid;
+    padding: 1em;
+    padding-bottom: 2em;
+}
+
+.rrs{
+width: 100%;
+height: 15%;
+cursor: pointer;
+}
+
+.rrs:hover{
+background-color: #63daca;
+transition-duration: .1s;
+transform:scale(0.8);
+background-color: #0184ff;
+}
+
+.rrs:active{
+height:20%;
+}
+
+/*fourth section*/
+
+#storeeextra{
+display: flex;
+flex-flow: row wrap;
+justify-content: space-between;
+}
+
+#storeeextra .AAextra{
+margin: .8em .2em;
+width: calc(33% - .4em);
+box-sizing: border-box;
+box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+background-color: rgba(255, 224, 179, 0.2);
+border-radius: 20px;
+border: black solid 1px;
+}
+
+#storeeextra h3, #storeeextra p{
+width: 90%;
+padding: 0;
+margin: 1em auto;
+}
+    
+
+#aextra{
+    border: black solid;
+    padding: 1em;
+    padding-bottom: 2em;
+}
+
+.cce{
+    width: 100%;
+    height: 13%;
+    cursor: pointer;    
+ }
+ 
+ .cce:hover{
+    background-color: #63daca;
+    transition-duration: .1s;
+    transform:scale(0.8);
+    background-color: #0184ff;
+ }
+ 
+ .cce:active{
+    height: 20%; 
+ }
+ 
+
+
+/*Truck image*/
+
+#truck{
+    height: 40%;
+    width: auto;
+    vertical-align: middle;
+}
+
+/*Add to cart button */
+
+.ATObtn{
+    outline: none;
+    border: none;
+    height: 5em;
+    width: 70%;
+    background-color: white;
+}
+
+.ATObtn:hover {
+    visibility: visible;
+    border-radius: 100px;
+    transition-duration: .25s;
+    transform: scale(1.05);
+    font-size:15px;
+    text-transform: uppercase;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    cursor: pointer;
+    background-color: white;
+}
+
+
+.ATObtn:active{
+    background-color: #0184ff;
+    animation-duration: 1s;
+}
+
+#myorders{
+    border: black solid;
+    padding: 1em;
+    margin-top: 2em;
+}
+
+#myorders p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.pobtn{
+    outline: none;
+    border: none;
+    height: 5em;
+    width: 70%;
+    background-color: white;
+    cursor: pointer;
+}
+
+.pobtn:hover{
+    border-radius: 100px;
+    transition-duration: .25s;
+    transform: scale(1.05);
+    font-size:15px;
+    text-transform: uppercase;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    background-color: white;
+}
+
+.pobtn:active{
+    background-color: #0184ff;
+    animation-duration: 1s;
+}
+
+#checkop{
+    padding: 1em;
+    margin-bottom: 1em;
+    border: none;
+    background-color: #3ed6b5;
+    height: 15PX;
+    width: 15PX;
+}
+
+#checkop:hover{
+    cursor: pointer;
+}
+
+#top{
+    outline: none;
+    border: none;
+    background-color: #4d9eeb;
+    cursor: pointer;
+    position: fixed;
+    margin: 1em;
+    right: 0;
+    bottom: 0;
+    height: 10%;
+    width: 10%;
+    color: white;
+}
+
+#top:hover{
+    border-radius: 100px;
+    transition-duration: 0.5s;;
+    transform: scale(1.05);
+    font-size:15px;
+    text-transform: uppercase;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+#top:active{
+    background-color: #188cf8;
+    animation-duration: 1s;
+}
+
+#Totalprice{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+}
+
+#addtomyfav{
+    margin-top: 1em;
+    margin-right: 1em;
+    outline: none;
+    border: none;
+    height: 5em;
+    width: 30%;
+    background-color: white;
+    cursor: pointer;
+}
+
+#addtomyfav:hover{
+    border-radius: 100px;
+    transition-duration: 0.5s;
+    transform: scale(1.05);
+    font-size:15px;
+    text-transform: uppercase;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    background-color: white;
+}
+
+#addtomyfav:active{
+    background-color: #0184ff;
+    animation-duration: 1s;
+}
+
+#displaymyfav{
+    margin-top: 1em;
+    margin-left: 1em;
+    outline: none;
+    border: none;
+    height: 5em;
+    width: 30%;
+    background-color: white;
+    cursor: pointer;
+}
+
+#displaymyfav:hover{
+    border-radius: 100px;
+    transition-duration: 0.5s;
+    transform: scale(1.05);
+    font-size:15px;
+    text-transform: uppercase;
+    background-color: white;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+#displaymyfav:active{
+    background-color: #0184ff;
+    animation-duration: 1s;
+}  
+
+
+
